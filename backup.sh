@@ -10,5 +10,5 @@
 # Usage 
 # [+] To run this script just simply write bash and script name [ ex: bash backup.sh]
 
-tar -cvf ~/git/backup-"$(date +%d.%m.%Y-%S.%M.%H)".tar ~/* 2> /dev/null
+tar -cvf $(pwd)/backup-"$(date +%d.%m.%Y-%S.%M.%H)".tar ~/* 2> /dev/null
 exit 0
